@@ -9,3 +9,9 @@ function checkCredentals(username, password) {  // опечатка в назв�
     return username && password;
 }
 
+function login(username, password) {
+    if (checkCredentials(username, password)) {
+        return { success: true, token: 'abc123' };
+    }
+    return { success: false };
+}
